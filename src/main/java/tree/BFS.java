@@ -59,6 +59,28 @@ public class BFS {
         return ans;
     }
 
+    public int deepestLeavesSum(TreeNode root) {
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        int ans = 0;
+
+        while(!queue.isEmpty()){
+            int currSize = queue.size();
+            ans = 0;
+            for(int i = 0; i<currSize; i++){
+                TreeNode node = queue.remove();
+                ans += node.val;
+                if(node.left != null){
+                    queue.add(node.left);
+                }
+                if(node.right != null){
+                    queue.add(node.right);
+                }
+            }
+        }
+        return ans;
+    }
+
     public List<Integer> largestValues(TreeNode root) {
 
         if(root == null){
