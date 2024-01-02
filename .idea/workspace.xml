@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="787ab42c-b7bc-435c-bf75-805ab59f7e00" name="Changes" comment="104. Maximum Depth of Binary Tree">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tree/T112.java" afterDir="false" />
+    <list default="true" id="787ab42c-b7bc-435c-bf75-805ab59f7e00" name="Changes" comment="112. Path Sum">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tree/T112Iterative.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +42,7 @@
     "Application.T104.executor": "Debug",
     "Application.T104Test.executor": "Run",
     "Application.T112.executor": "Run",
+    "Application.T112Iterative.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -63,23 +64,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tree" />
       <recent name="missingnumber" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.T112">
-    <configuration name="BackSpace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stack.BackSpace" />
-      <module name="Leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="stack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.T112Iterative">
     <configuration name="MakeStringGreat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="stack.MakeStringGreat" />
       <module name="Leetcode" />
@@ -132,13 +121,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="T112Iterative" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.T112Iterative" />
+      <module name="Leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.T112Iterative" />
         <item itemvalue="Application.T112" />
         <item itemvalue="Application.T104Test" />
         <item itemvalue="Application.T104" />
         <item itemvalue="Application.MakeStringGreat" />
-        <item itemvalue="Application.BackSpace" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +174,7 @@
       <workItem from="1696241769432" duration="4492000" />
       <workItem from="1696377744078" duration="5634000" />
       <workItem from="1697230827093" duration="390000" />
-      <workItem from="1704158971196" duration="3276000" />
+      <workItem from="1704158971196" duration="4979000" />
     </task>
     <task id="LOCAL-00001" summary="104. Maximum Depth of Binary Tree">
       <option name="closed" value="true" />
@@ -182,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704160987009</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="112. Path Sum">
+      <option name="closed" value="true" />
+      <created>1704167605334</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704167605334</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,7 +200,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="104. Maximum Depth of Binary Tree" />
-    <option name="LAST_COMMIT_MESSAGE" value="104. Maximum Depth of Binary Tree" />
+    <MESSAGE value="112. Path Sum" />
+    <option name="LAST_COMMIT_MESSAGE" value="112. Path Sum" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
