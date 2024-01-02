@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="787ab42c-b7bc-435c-bf75-805ab59f7e00" name="Changes" comment="112. Path Sum Iterative">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tree/T1448.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tree/T1448Iterative.java" afterDir="false" />
+    <list default="true" id="787ab42c-b7bc-435c-bf75-805ab59f7e00" name="Changes" comment="1448. Count Good Nodes in Binary Tree">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tree/BFS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +39,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BFS.executor": "Run",
     "Application.T104.executor": "Debug",
     "Application.T104Test.executor": "Run",
     "Application.T112.executor": "Run",
@@ -71,9 +71,9 @@
       <recent name="missingnumber" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.T1448Iterative">
-    <configuration name="T104Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tree.T104Test" />
+  <component name="RunManager" selected="Application.BFS">
+    <configuration name="BFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.BFS" />
       <module name="Leetcode" />
       <extension name="coverage">
         <pattern>
@@ -139,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BFS" />
         <item itemvalue="Application.T1448Iterative" />
         <item itemvalue="Application.T1448" />
         <item itemvalue="Application.T112Iterative" />
         <item itemvalue="Application.T112" />
-        <item itemvalue="Application.T104Test" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +177,7 @@
       <workItem from="1696241769432" duration="4492000" />
       <workItem from="1696377744078" duration="5634000" />
       <workItem from="1697230827093" duration="390000" />
-      <workItem from="1704158971196" duration="8559000" />
+      <workItem from="1704158971196" duration="12563000" />
     </task>
     <task id="LOCAL-00001" summary="104. Maximum Depth of Binary Tree">
       <option name="closed" value="true" />
@@ -203,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704169287226</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1448. Count Good Nodes in Binary Tree">
+      <option name="closed" value="true" />
+      <created>1704194421478</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704194421478</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +221,8 @@
     <MESSAGE value="104. Maximum Depth of Binary Tree" />
     <MESSAGE value="112. Path Sum" />
     <MESSAGE value="112. Path Sum Iterative" />
-    <option name="LAST_COMMIT_MESSAGE" value="112. Path Sum Iterative" />
+    <MESSAGE value="1448. Count Good Nodes in Binary Tree" />
+    <option name="LAST_COMMIT_MESSAGE" value="1448. Count Good Nodes in Binary Tree" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
