@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="787ab42c-b7bc-435c-bf75-805ab59f7e00" name="Changes" comment="112. Path Sum">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tree/T112Iterative.java" afterDir="false" />
+    <list default="true" id="787ab42c-b7bc-435c-bf75-805ab59f7e00" name="Changes" comment="112. Path Sum Iterative">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tree/T1448.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tree/T1448Iterative.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +44,8 @@
     "Application.T104Test.executor": "Run",
     "Application.T112.executor": "Run",
     "Application.T112Iterative.executor": "Run",
+    "Application.T1448.executor": "Run",
+    "Application.T1448Iterative.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -68,33 +71,7 @@
       <recent name="missingnumber" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.T112Iterative">
-    <configuration name="MakeStringGreat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stack.MakeStringGreat" />
-      <module name="Leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="stack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="T104" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tree.T104" />
-      <module name="Leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.T1448Iterative">
     <configuration name="T104Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tree.T104Test" />
       <module name="Leetcode" />
@@ -134,13 +111,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="T1448" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.T1448" />
+      <module name="Leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="T1448Iterative" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.T1448Iterative" />
+      <module name="Leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.T1448Iterative" />
+        <item itemvalue="Application.T1448" />
         <item itemvalue="Application.T112Iterative" />
         <item itemvalue="Application.T112" />
         <item itemvalue="Application.T104Test" />
-        <item itemvalue="Application.T104" />
-        <item itemvalue="Application.MakeStringGreat" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +177,7 @@
       <workItem from="1696241769432" duration="4492000" />
       <workItem from="1696377744078" duration="5634000" />
       <workItem from="1697230827093" duration="390000" />
-      <workItem from="1704158971196" duration="4979000" />
+      <workItem from="1704158971196" duration="8559000" />
     </task>
     <task id="LOCAL-00001" summary="104. Maximum Depth of Binary Tree">
       <option name="closed" value="true" />
@@ -192,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704167605334</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="112. Path Sum Iterative">
+      <option name="closed" value="true" />
+      <created>1704169287226</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704169287226</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +212,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="104. Maximum Depth of Binary Tree" />
     <MESSAGE value="112. Path Sum" />
-    <option name="LAST_COMMIT_MESSAGE" value="112. Path Sum" />
+    <MESSAGE value="112. Path Sum Iterative" />
+    <option name="LAST_COMMIT_MESSAGE" value="112. Path Sum Iterative" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
