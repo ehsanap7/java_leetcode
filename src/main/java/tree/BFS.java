@@ -1,9 +1,6 @@
 package tree;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 public class BFS {
 
@@ -37,20 +34,20 @@ public class BFS {
         queue.add(root);
         List<Integer> ans = new ArrayList<>();
 
-        if(root==null){
+        if (root == null) {
             return new ArrayList<>();
         }
 
-        while(!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             int sizeCurr = queue.size();
             int temp = 0;
-            for(int i=0 ; i < sizeCurr ; i++){
+            for (int i = 0; i < sizeCurr; i++) {
                 TreeNode curr = queue.remove();
                 temp = curr.val;
-                if(curr.left!=null){
+                if (curr.left != null) {
                     queue.add(curr.left);
                 }
-                if(curr.right!=null){
+                if (curr.right != null) {
                     queue.add(curr.right);
                 }
             }
@@ -64,16 +61,16 @@ public class BFS {
         queue.add(root);
         int ans = 0;
 
-        while(!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             int currSize = queue.size();
             ans = 0;
-            for(int i = 0; i<currSize; i++){
+            for (int i = 0; i < currSize; i++) {
                 TreeNode node = queue.remove();
                 ans += node.val;
-                if(node.left != null){
+                if (node.left != null) {
                     queue.add(node.left);
                 }
-                if(node.right != null){
+                if (node.right != null) {
                     queue.add(node.right);
                 }
             }
@@ -83,7 +80,7 @@ public class BFS {
 
     public List<Integer> largestValues(TreeNode root) {
 
-        if(root == null){
+        if (root == null) {
             return new ArrayList<>();
         }
 
@@ -91,16 +88,16 @@ public class BFS {
         queue.add(root);
         List<Integer> ans = new ArrayList<>();
 
-        while(!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             int queueSize = queue.size();
             int maxCurr = Integer.MIN_VALUE;
-            for(int i = 0 ; i < queueSize ; i++){
+            for (int i = 0; i < queueSize; i++) {
                 TreeNode node = queue.remove();
                 maxCurr = Math.max(maxCurr, node.val);
-                if(node.left!=null){
+                if (node.left != null) {
                     queue.add(node.left);
                 }
-                if(node.right!=null){
+                if (node.right != null) {
                     queue.add(node.right);
                 }
             }
@@ -109,20 +106,99 @@ public class BFS {
         return ans;
     }
 
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        if (root == null) {
+            return new ArrayList<>();
+        }
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        boolean zz = true;
+        List<List<Integer>> ans = new ArrayList<>();
+
+        while (!queue.isEmpty()) {
+            int sizeCurr = queue.size();
+            List<Integer> curr = new ArrayList<>();
+            for (int i = 0; i < sizeCurr; i++) {
+                TreeNode node = queue.remove();
+                curr.add(node.val);
+                if (node.left != null) {
+                    queue.add(node.left);
+                }
+                if (node.right != null) {
+                    queue.add(node.right);
+                }
+            }
+            if (zz) {
+                ans.add(curr);
+            } else {
+                Collections.reverse(curr);
+                ans.add(curr);
+            }
+            zz = !zz;
+        }
+        System.out.println(ans);
+        return ans;
+    }
+
+    public int dfs(TreeNode root, int low, int high, int sum) {
+        if (root == null) {
+            return sum;
+        }
+        int left = dfs(root.left, low, high, sum);
+        int right = dfs(root.right, low, high, sum);
+        if (root.val >= low && root.val <= high) {
+            return sum + root.val;
+        }
+        return sum;
+    }
+
+    public int rangeSumBST(TreeNode root, int low, int high) {
+        if (root == null) {
+            return 0;
+        }
+        int left = rangeSumBST(root.left, low, high);
+        int right = rangeSumBST(root.right, low, high);
+        int sum = left + right;
+        if (root.val >= low && root.val <= high) {
+            sum += root.val;
+        }
+        return sum;
+    }
+
+    public int rangeSumBSTIterative(TreeNode root, int low, int high) {
+        if (root == null) {
+            return 0;
+        }
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        int ans = 0;
+
+        while (!stack.isEmpty()) {
+            TreeNode node = stack.pop();
+            if (node.val >= low && node.val <= high) {
+                ans += node.val;
+            }
+            if (node.left != null) {
+                stack.push(node.left);
+            }
+            if (node.right != null) {
+                stack.push(node.right);
+            }
+        }
+        return ans;
+    }
+
     public static void main(String[] args) {
         BFS bfs = new BFS();
 
-        TreeNode root = new TreeNode(1);
-//        root.left = new TreeNode(4);
-        root.right = new TreeNode(3);
-//        root.left.left = new TreeNode(11);
-//        root.left.left.left = new TreeNode(7);
-//        root.left.left.right = new TreeNode(2);
-////        root.right.left = new TreeNode(13);
-//        root.right.right = new TreeNode(4);
-//        root.right.right.right = new TreeNode(1);
+        TreeNode root = new TreeNode(10);
+        root.left = new TreeNode(5);
+        root.right = new TreeNode(15);
+        root.left.left = new TreeNode(3);
+        root.left.right = new TreeNode(7);
+        root.right.right = new TreeNode(18);
 
-        bfs.rightSideView(root);
+        bfs.rangeSumBSTIterative(root, 7, 15);
     }
 
 }

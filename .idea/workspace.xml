@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="787ab42c-b7bc-435c-bf75-805ab59f7e00" name="Changes" comment="1448. Count Good Nodes in Binary Tree">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tree/BFS.java" afterDir="false" />
+    <list default="true" id="787ab42c-b7bc-435c-bf75-805ab59f7e00" name="Changes" comment="1302. Deepest Leaves Sum">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tree/BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/BFS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.BFS.executor": "Run",
+    "Application.BFS.executor": "Debug",
     "Application.T104.executor": "Debug",
     "Application.T104Test.executor": "Run",
     "Application.T112.executor": "Run",
@@ -177,7 +177,7 @@
       <workItem from="1696241769432" duration="4492000" />
       <workItem from="1696377744078" duration="5634000" />
       <workItem from="1697230827093" duration="390000" />
-      <workItem from="1704158971196" duration="12563000" />
+      <workItem from="1704158971196" duration="16256000" />
     </task>
     <task id="LOCAL-00001" summary="104. Maximum Depth of Binary Tree">
       <option name="closed" value="true" />
@@ -211,7 +211,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704194421478</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="199. Binary Tree Right Side View.&#10;&#10;515. Find Largest Value in Each Tree Row.">
+      <option name="closed" value="true" />
+      <created>1704228532492</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704228532492</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1302. Deepest Leaves Sum">
+      <option name="closed" value="true" />
+      <created>1704229114641</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704229114641</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +238,9 @@
     <MESSAGE value="112. Path Sum" />
     <MESSAGE value="112. Path Sum Iterative" />
     <MESSAGE value="1448. Count Good Nodes in Binary Tree" />
-    <option name="LAST_COMMIT_MESSAGE" value="1448. Count Good Nodes in Binary Tree" />
+    <MESSAGE value="199. Binary Tree Right Side View.&#10;&#10;515. Find Largest Value in Each Tree Row." />
+    <MESSAGE value="1302. Deepest Leaves Sum" />
+    <option name="LAST_COMMIT_MESSAGE" value="1302. Deepest Leaves Sum" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -266,6 +284,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/stack/MakeStringGreat.java</url>
           <line>7</line>
           <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tree/BFS.java</url>
+          <line>143</line>
+          <option name="timeStamp" value="67" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
