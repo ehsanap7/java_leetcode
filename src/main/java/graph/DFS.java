@@ -44,9 +44,50 @@ public class DFS {
         }
     }
 
+    private int m;
+    private int n;
+    private int[][] directions = new int[][]{{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+    private boolean[][] seenNode;
+
+    public int numIslands(char[][] grid) {
+        int ans = 0;
+        m = grid.length;
+        n = grid[0].length;
+        seenNode = new boolean[m][n];
+
+        for (int r = 0; r < grid.length; r++) {
+            for (int c = 0; c < grid[r].length; c++) {
+                char land = grid[r][c];
+                if (land == '1' && !seenNode[r][c]) {
+                    ans++;
+                    seenNode[r][c] = true;
+                    dfs(grid, r, c);
+                }
+            }
+        }
+
+        return ans;
+    }
+
+    public void dfs(char[][] grid, int r, int c) {
+        for (int[] direction : directions) {
+            int nr = r + direction[0];
+            int nc = c + direction[1];
+            if (isValid(grid, nr, nc)) {
+                seenNode[nr][nc] = true;
+                dfs(grid, nr, nc);
+            }
+        }
+    }
+
+    public boolean isValid(char[][] grid, int nr, int nc) {
+        return nr > -1 && nr < m && nc > -1 && nc < n && !seenNode[nr][nc] && grid[nr][nc] == '1';
+    }
+
     public static void main(String[] args) {
         DFS dfs = new DFS();
-        System.out.println(dfs.findCircleNum(new int[][]{{1, 0, 0, 1}, {0, 1, 1, 0}, {0, 1, 1, 1}, {1, 0, 1, 1}}));
+        System.out.println(dfs.numIslands(new char[][]{
+                {'1', '1', '1', '1', '0'}, {'1', '1', '0', '1', '0'}, {'1', '1', '0', '0', '0'}, {'0', '0', '0', '0', '0'}}));
     }
 
 }

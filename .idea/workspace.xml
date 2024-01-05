@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="787ab42c-b7bc-435c-bf75-805ab59f7e00" name="Changes" comment="530. Minimum Absolute Difference in BST">
-      <change afterPath="$PROJECT_DIR$/src/main/java/graph/DFS.java" afterDir="false" />
+    <list default="true" id="787ab42c-b7bc-435c-bf75-805ab59f7e00" name="Changes" comment="547. Number of Provinces">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tree/BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/BFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graph/DFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graph/DFS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +40,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.BFS.executor": "Run",
-    "Application.DFS.executor": "Debug",
+    "Application.DFS.executor": "Run",
     "Application.T104.executor": "Debug",
     "Application.T104Test.executor": "Run",
     "Application.T112.executor": "Run",
@@ -63,7 +62,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -179,7 +178,9 @@
       <workItem from="1696241769432" duration="4492000" />
       <workItem from="1696377744078" duration="5634000" />
       <workItem from="1697230827093" duration="390000" />
-      <workItem from="1704158971196" duration="33024000" />
+      <workItem from="1704158971196" duration="34717000" />
+      <workItem from="1704443410261" duration="30000" />
+      <workItem from="1704443451408" duration="4599000" />
     </task>
     <task id="LOCAL-00001" summary="104. Maximum Depth of Binary Tree">
       <option name="closed" value="true" />
@@ -237,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704240617361</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="547. Number of Provinces">
+      <option name="closed" value="true" />
+      <created>1704357015540</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1704357015540</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +260,8 @@
     <MESSAGE value="199. Binary Tree Right Side View.&#10;&#10;515. Find Largest Value in Each Tree Row." />
     <MESSAGE value="1302. Deepest Leaves Sum" />
     <MESSAGE value="530. Minimum Absolute Difference in BST" />
-    <option name="LAST_COMMIT_MESSAGE" value="530. Minimum Absolute Difference in BST" />
+    <MESSAGE value="547. Number of Provinces" />
+    <option name="LAST_COMMIT_MESSAGE" value="547. Number of Provinces" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -305,6 +315,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/tree/BFS.java</url>
           <line>248</line>
           <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/graph/DFS.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/graph/DFS.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="76" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
