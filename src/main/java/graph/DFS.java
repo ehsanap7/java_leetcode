@@ -84,10 +84,53 @@ public class DFS {
         return nr > -1 && nr < m && nc > -1 && nc < n && !seenNode[nr][nc] && grid[nr][nc] == '1';
     }
 
+    public int minReorder(int n, int[][] connections) {
+
+        Map<Integer, List<Integer>> graph = new HashMap<>();
+        Set<String> roads = new HashSet<>();
+        Set<Integer> seen = new HashSet<>();
+
+        for (int[] connection : connections) {
+            int x = connection[0], y = connection[1];
+            if (!graph.containsKey(x)) {
+                graph.put(x, new ArrayList<>());
+            }
+            if (!graph.containsKey(y)) {
+                graph.put(y, new ArrayList<>());
+            }
+            graph.get(x).add(y);
+            graph.get(y).add(x);
+            roads.add(convertToHash(x, y));
+        }
+
+        int ans = 0;
+        Stack<Integer> stack = new Stack<>();
+        stack.push(0);
+        seen.add(0);
+
+        while (!stack.isEmpty()) {
+            int curr = stack.pop();
+            List<Integer> childs = graph.get(curr);
+            for (Integer child : childs) {
+                if (!seen.contains(child)) {
+                    if (roads.contains(String.valueOf(curr) + "," + String.valueOf(child))) {
+                        ans++;
+                    }
+                    stack.push(child);
+                    seen.add(child);
+                }
+            }
+        }
+        return ans;
+    }
+
+    public String convertToHash(int row, int col) {
+        return String.valueOf(row) + "," + String.valueOf(col);
+    }
+
     public static void main(String[] args) {
         DFS dfs = new DFS();
-        System.out.println(dfs.numIslands(new char[][]{
-                {'1', '1', '1', '1', '0'}, {'1', '1', '0', '1', '0'}, {'1', '1', '0', '0', '0'}, {'0', '0', '0', '0', '0'}}));
+        System.out.println(dfs.minReorder(6, new int[][]{{0, 1}, {1, 3}, {2, 3}, {4, 0}, {4, 5}}));
     }
 
 }
